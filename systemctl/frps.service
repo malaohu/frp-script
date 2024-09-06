@@ -1,0 +1,11 @@
+[Unit]
+Description = frp server
+After = network.target syslog.target
+Wants = network.target
+
+[Service]
+Type = simple
+ExecStart = /opt/frp/frps -c /opt/frp/frps.toml
+
+[Install]
+WantedBy = multi-user.target

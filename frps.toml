@@ -1,0 +1,22 @@
+#服务绑定的IP与端口
+bindAddr = "0.0.0.0"
+bindPort = 7000
+
+#web dashboard配置
+webServer.addr = "0.0.0.0"
+webServer.port = 7001
+webServer.user = "admin"
+webServer.password = "Mmm306306..."
+
+#启用prometheus监控指标
+enablePrometheus = true
+#token权限验证，需与客户端配置一致
+
+auth.method = "token"
+auth.token = "xxxxxxxx"
+
+
+#日志配置
+log.to = "/data/logs/frps.log"
+log.level = "info"
+log.maxDays = 3

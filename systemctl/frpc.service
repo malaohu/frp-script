@@ -1,0 +1,11 @@
+[Unit]
+Description = frp client
+After = network.target syslog.target
+Wants = network.target
+
+[Service]
+Type = simple
+ExecStart = /opt/frp/systemctl/frpc -c /opt/frp/systemctl/frpc.toml
+
+[Install]
+WantedBy = multi-user.target
